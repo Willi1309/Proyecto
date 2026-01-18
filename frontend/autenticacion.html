@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Base de Datos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <form class="autenticacion" action="/autenticar" method="GET">
+        <h1>Sistema de Autenticacion</h1>
+        <div class="autenticacion-box">
+            <p>Ingrese el numero de documento</p>
+            <div class="cedula-autenticacion">
+                <p>V-</p>
+                <input type="number" name="cedula" class="cedula-autenticacion-input">
+            </div>
+        </div>
+        <div>
+            <button id="volver-apertura" type="button">Volver</button>
+            <button id="enviar" type="submit">Enviar</button>
+        </div>
+    </form>
+    <script>
+        const volverApertura = document.getElementById('volver-apertura')
+        if (volverApertura) {
+            volverApertura.addEventListener('click', function(){
+                window.location.href = '/'
+            })
+        }
+    </script>
+</body>
+</html>

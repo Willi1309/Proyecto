@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Base de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="reporte-box">
+        <h1>Comprobante a Imprimir</h1>
+        <div class="comprobante-box">
+            <div class="comprobante-nro">
+                <h2>Comprobante Nro</h2>
+            </div>
+            <div class="comprobante-info">
+                <div>
+                    <p><strong>Nombres y Apellidos</strong></p>
+                    <p><%= usuario.nombre_apellido %></p>
+                </div>
+                <div>
+                    <p><strong>Numero de Documento</strong></p>
+                    <p>V-<%= usuario.cedula %></p>
+                </div>
+                <div>
+                    <p><strong>Fecha de Comprobante</strong></p>
+                    <p><%= comprobante.fecha %></p>
+                </div>
+            </div>
+            <div class="comprobante-info-cuenta">
+                <div>
+                    <p><strong>Tipo de Cuenta</strong></p>
+                    <p><%= comprobante.tipo_cuenta %></p>
+                </div>
+                <div>
+                    <p><strong>Oficina</strong></p>
+                    <p><%= comprobante.oficina %></p>
+                </div>
+                <div>
+                    <p><strong>Codigo</strong></p>
+                    <p><%= comprobante.codigo_oficina %></p>
+                </div>
+            </div>
+            <div class="direccion-oficina">
+                <p><strong>Direccion de Oficina</strong></p>
+                <p><%= comprobante.direccion %></p>
+            </div>
+            <div class="nota">
+                <p><strong>NOTA: Usted posee 15 dias habiles para formalizar su solicitud en la oficina bancaria señalada. <br/>Recuerde consignar este comprobante junto a los recaudos al momento de abrir su cuenta.</strong></p>
+            </div>
+        </div>
+        <button id="volver-apertura">Volver</button>
+    </main>
+    <script>
+        const volverApertura = document.getElementById('volver-apertura')
+        if (volverApertura) {
+            volverApertura.addEventListener('click', function(){
+                window.location.href = '/'
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Base de Datos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="registro-box">
+        <h1>Registro de Solicitud de Pre-Apertura de Cuenta</h1>
+        <div class="tipo-cuenta">
+            <div class="tipo-cuenta-titulo">
+                <p>Datos de Cuenta</p>
+            </div>
+            <div class="datos-cuenta">
+                <div>
+                    <p>Nombre y Apellido<span>*</span></p>
+                    <input type="text" id="nombre-apellido">
+                </div>
+                <div>
+                    <p>Cedula de Identidad<span>*</span></p>
+                    <input type="number" id="cedula">
+                </div>
+                <div class="tipo-cuenta-box">
+                    <p>Tipo de Cuenta<span>*</span></p>
+                    <select name="tipo-cuenta" id="tipo-cuenta" >
+                        <option value="">Seleccione</option>
+                        <option value="Cuenta de Ahorro">Cuenta de Ahorro</option>
+                        <option value="Cuenta Corriente">Cuenta Corriente</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="datos-complementarios">
+            <div class="datos-complementarios-titulo">
+                <p>Datos Complementarios</p>
+            </div>
+            <div class="datos-complementarios-box1">
+                <div class="estimado-movilizacion">
+                    <p>Monto Estimado de Movilizacion de la Cuenta<span>*</span></p>
+                    <select name="estimado-movilizacion" id="estimado-movilizacion" >
+                        <option value="">Seleccione</option>
+                        <option value="Entre 0 y 500">Entre 0 y 500</option>
+                        <option value="Entre 501 y 2.500">Entre 501 y 2.500</option>
+                        <option value="Entre 2.501 y 10.00">Entre 2.501 y 10.000</option>
+                        <option value="Entre 10.0001 y 100.000">Entre 10.0001 y 100.000</option>
+                        <option value="Mas de 100.001">Mas de 100.001</option>
+                    </select>
+                </div>
+                <div class="promedio-movilizacion">
+                    <p>Promedio Transacciones Mensual<span>*</span></p>
+                    <select name="promedio-movilizacion" id="promedio-movilizacion" >
+                        <option>Seleccione</option>
+                        <option value="< 20">< 20</option>
+                        <option value=">21 y < 50">>21 y < 50</option>
+                        <option value="> 51 y < 100">> 51 y < 100</option>
+                        <option value=">101">>101</option>
+                    </select>
+                </div>
+            </div>
+            <div class="datos-complementarios-box2">
+                <div>
+                    <p>Origen Fondo<span>*</span></p>
+                    <input type="text" id="origen-fondo">
+                </div>
+                <div>
+                    <p>Destino Fondo<span>*</span></p>
+                    <input type="text" id="destino-fondo">
+                </div>
+            </div>
+        </div>
+        <div class="complemento-normativo">
+            <div class="complemento-normativo-titulo">
+                <p>Complemento Normativo</p>
+            </div>
+            <div class="complemento-normativo-box">
+                <div class="motivo-solicitud">
+                    <p>Motivo por lo cual solicita los servicios de la institucion<span>*</span></p>
+                    <select id="motivo-solicitud" name="motivo_solicitud" required>
+                        <option value="">Seleccione</option>
+                        <option value="Buen servicio y variedad de productos">Buen servicio y variedad de productos</option>
+                        <option value="Cliente tradicional">Cliente tradicional</option>
+                        <option value="Cuenta de nomina">Cuenta de nomina</option>
+                        <option value="Gestion de funcionario del banco">Gestion de funcionario del banco</option>
+                        <option value="Por estar a nivel nacional">Por estar a nivel nacional</option>
+                        <option value="Por la solidez / prestigio / seguridad">Por la solidez / prestigio / seguridad</option>
+                        <option value="Por los altos intereses">Por los altos intereses</option>
+                        <option value="Por los premios">Por los premios</option>
+                        <option value="Publicidad">Publicidad</option>
+                        <option value="Referencia de un familiar / amigo">Referencia de un familiar / amigo</option>
+                    </select>
+                </div>
+                <div class="uso-cuenta">
+                    <p>Uso que le dara a la cuenta<span>*</span></p>
+                    <select name="uso-cuenta" id="uso-cuenta">
+                        <option value="">Seleccione</option>
+                        <option value="Ahorro personal">Ahorro personal</option>
+                        <option value="Atender gastos varios / personales">Atender gastos varios / personales</option>
+                        <option value="Cancelar cuotas de credito">Cancelar cuotas de credito</option>
+                        <option value="Deposito de las ventas">Deposito de las ventas</option>
+                        <option value="Movilizar fondos de nomina / pension / fideicomiso">Movilizar fondos de nomina / pension / fideicomiso</option>
+                        <option value="Pago de proveedores">Pago de proveedores</option>
+                        <option value="Particular">Particular</option>
+                        <option value="Recibir deposito de alquileres">Recibir deposito de alquileres</option>
+                        <option value="Recibir intereses de depositos a plazo">Recibir intereses de depositos a plazo</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+        <div class="agenda">
+            <div class="agenda-titulo">
+                <p>Complemento Normativo</p>
+            </div>
+            <div class="agencia-box">
+                <div class="agencia">
+                    <p>Agencia<span>*</span></p>
+                    <select name="agencia-bancaria" id="agencia-bancaria">
+                        <option value="">Seleccione</option>
+                        <option value="Agencia Las Trinitarias - C.C. Las Trinitarias">Agencia Las Trinitarias - C.C. Las Trinitarias</option>
+                        <option value="Agencia Sambil - C.C. Sambil Barquisimeto">Agencia Sambil - C.C. Sambil Barquisimeto</option>
+                        <option value="Agencia Avenida Vargas - Torre ejecutiva">Agencia Avenida Vargas - Torre ejecutiva</option>
+                        <option value="Agencia El Oeste - C.C. Metrópolis">Agencia El Oeste - C.C. Metrópolis</option>
+                    </select>
+                </div>
+                <div class="agenda-input">
+                    <p>Direccion<span>*</span></p>
+                    <input type="text" id="direccion">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="autenticacion">Autenticar</button>
+            <button id="button-finalizar">Finalizar</button>
+        </div>
+    </main>
+    <script type="module" src="/registro.js"></script>
+</body>
+</html>

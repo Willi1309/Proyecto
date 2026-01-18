@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@700&family=Roboto:wght@500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    user-select: none;
+    font-family: Jost, sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+input, select, textarea{
+    outline: none;
+}
+
+span{
+    color: rgb(255, 0, 0);
+}
+
+.registro-box, .autenticacion, .reporte-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reporte-box > h1{
+    margin-bottom: 1rem;
+}
+
+
+.tipo-cuenta, .datos-complementarios, .complemento-normativo, .agenda, .comprobante-box{
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(251, 254, 255);
+    border: 2px solid rgb(214, 245, 255);
+}
+
+ .autenticacion-box{
+    width: 15%;
+    border-radius: 20px;
+    background-color: rgb(251, 254, 255);
+    border: 2px solid rgb(214, 245, 255);
+ }
+
+.tipo-cuenta{
+    height: 11.5vh;
+}
+
+.datos-complementarios{
+    margin-top: 14px;
+    height: 18vh;
+}
+
+.complemento-normativo, .agenda{
+    margin-top: 14px;
+    height: 14vh;
+}
+
+.cedula-autenticacion{
+    display: flex;
+    margin: 1rem 0 1.3rem 30px;
+}
+
+.tipo-cuenta-titulo, .comprobante-nro{
+    border-radius: 20px;
+    padding: .4rem;
+    margin-top: .5rem;
+    margin-left: 26px;
+    font-size: 18px;
+}
+
+.tipo-cuenta-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tipo-cuenta-box > p{
+    margin-right: 18px;
+}
+
+.datos-complementarios-titulo, .complemento-normativo-titulo, .agenda-titulo{
+    padding: 1rem;
+    margin-left: 14px;
+    font-size: 18px;
+}
+
+.motivo-solicitud{
+    margin-left: 30px;
+}
+
+.estimado-movilizacion, .promedio-movilizacion, .datos-complementarios-box1, .complemento-normativo-box, .agenda-input, .agencia{
+    display: flex;
+}
+.estimado-movilizacion > p, .promedio-movilizacion > p{
+    margin: 0 24px 0 30px;
+}
+
+.datos-complementarios-box2, .datos-complementarios-box2 > div{
+    display: flex;
+    width: 100%;
+}
+.datos-complementarios-box2{
+    margin: 32px 0 0 30px;
+}
+
+.autenticacion-box > p{
+    margin: 14px 0 0 26px;
+}
+.datos-complementarios-box2 > div > input{
+    width: 15.4rem;
+}
+
+.uso-cuenta{
+    margin-left: 8rem;
+}
+
+.agencia-box{
+    display: flex;
+}
+
+.agencia{
+    margin-left: 1.8rem;
+}
+
+.agenda-input{
+    margin-left: 8rem;
+}
+
+.agenda-input > input{
+    width: 14.5vw;
+}
+
+#button-finalizar, #autenticacion, #enviar, #volver-apertura{
+    margin-top: 2rem;
+    width: 8rem;
+    height: 3.5vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(169, 234, 255);
+    cursor: pointer;
+}
+
+#button-finalizar:hover, #autenticacion:hover, #enviar:hover, #volver-apertura:hover{
+    background-color: rgb(120, 221, 255);
+}
+
+div > p{
+    margin-right: 18px;
+}
+
+.registro-box > h1, .autenticacion > h1{
+    margin-bottom: 2rem;
+}
+.datos-cuenta{
+    display: flex;
+    width: 100%;
+    margin: 12px 0 0 18px;
+}
+
+.datos-cuenta > div{
+    display: flex;
+}
+
+
+.datos-cuenta > div > p{
+    margin-left: 12px;
+}
+
+.comprobante-info, .comprobante-info-cuenta{
+    display: flex;
+    margin-left: 34px;
+}
+
+.comprobante-info{
+    gap: 10rem;
+}
+
+.comprobante-info-cuenta{
+    gap: 11.8rem;
+    margin: 2rem 0 0 34px;
+}
+
+.direccion-oficina{
+    margin: 2rem 0 0 34px;
+}
+
+.nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 0;
+}
